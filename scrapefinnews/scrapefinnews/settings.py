@@ -50,10 +50,16 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    "scrapefinnews.middlewares.ScrapefinnewsDownloaderMiddleware": 543,
-#}
 
+SCRAPEOPS_API_KEY = 'aa1dd140-d5b7-4d00-a246-44f87d01c09a'
+SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = True
+SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED = True
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapefinnews.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 400,
+    'scrapefinnews.middlewares.ScrapeOpsFakeUserAgentMiddleware': 400,
+#    "scrapefinnews.middlewares.ScrapefinnewsDownloaderMiddleware": 543,
+}
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
