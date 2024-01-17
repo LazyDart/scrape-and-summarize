@@ -56,8 +56,8 @@ SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = True
 SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED = True
 
 DOWNLOADER_MIDDLEWARES = {
-    'scrapefinnews.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 400,
-    'scrapefinnews.middlewares.ScrapeOpsFakeUserAgentMiddleware': 400,
+    # 'scrapefinnews.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 400,
+    # 'scrapefinnews.middlewares.ScrapeOpsFakeUserAgentMiddleware': 400,
 #    "scrapefinnews.middlewares.ScrapefinnewsDownloaderMiddleware": 543,
 }
 # Enable or disable extensions
