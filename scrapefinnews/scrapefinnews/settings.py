@@ -49,9 +49,7 @@ ROBOTSTXT_OBEY = True
 #}
 
 # Enable or disable downloader middlewares
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-
-SCRAPEOPS_API_KEY = 'aa1dd140-d5b7-4d00-a246-44f87d01c09a'
+# See '
 SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = True
 SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED = True
 
